@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Art Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #f0f0f0;
+      margin-left: 1.5rem;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+    }
+    h1, h2 {
+      color: #ffb74d;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+    }
+    .lightbox:target {
+      display: flex;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1f1f1f;
+    }
+    .btn {
+      background: #ffb74d;
+      color: #121212;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Art</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Explore my pencil and color artworks. I specialize in hand-drawn and colored pieces that capture emotion and detail.</p>
+    <a class="btn" href="#contact">Commission Me</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an artist who loves creating expressive and detailed pieces using pencil and color media. My goal is to bring ideas to life through simple tools and deep imagination.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <a href="#img1"><img src="art1.jpg" alt="Artwork 1"></a>
+      <a href="#img2"><img src="art2.jpg" alt="Artwork 2"></a>
+      <a href="#img3"><img src="art3.jpg" alt="Artwork 3"></a>
+    </div>
+
+    <div id="img1" class="lightbox"><img src="art1.jpg" alt="Artwork 1"></div>
+    <div id="img2" class="lightbox"><img src="art2.jpg" alt="Artwork 2"></div>
+    <div id="img3" class="lightbox"><img src="art3.jpg" alt="Artwork 3"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Interested in a custom piece? Reach out for commissions or inquiries.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <textarea placeholder="Your Message" rows="5" required></textarea><br><br>
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <p>Follow me on Instagram: <a href="https://instagram.com/yourusername" target="_blank">@yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Art. All rights reserved.</p>
+  </footer>
+</body>
+</html>
