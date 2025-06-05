@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Art Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <title>Yugeart Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     * {
       box-sizing: border-box;
@@ -13,12 +14,12 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #0d0d0d;
-      color: #e0e0e0;
+      background-color: #ffffff;
+      color: #000000;
       scroll-behavior: smooth;
     }
     header {
-      background: #1a1a1a;
+      background: #f0f0f0;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
@@ -26,15 +27,15 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      color: #ff9800;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.2rem;
+      color: #000000;
     }
     nav a {
-      color: #e0e0e0;
+      color: #000000;
       margin-left: 1.5rem;
       text-decoration: none;
       font-weight: 500;
@@ -43,20 +44,20 @@
       padding: 3rem 2rem;
     }
     h2 {
-      color: #ff9800;
+      color: #000000;
       font-size: 2rem;
     }
     .hero {
       text-align: center;
       padding: 4rem 2rem;
-      background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+      background: #f9f9f9;
     }
     .hero h2 {
       font-size: 2.5rem;
     }
     .btn {
-      background: #ff9800;
-      color: #121212;
+      background: #000000;
+      color: #ffffff;
       border: none;
       padding: 0.75rem 1.5rem;
       border-radius: 5px;
@@ -73,7 +74,7 @@
     .gallery img {
       width: 100%;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.3s;
     }
     .gallery img:hover {
@@ -83,37 +84,45 @@
       width: 100%;
       padding: 0.75rem;
       margin-top: 1rem;
-      border: none;
+      border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 1rem;
     }
     footer {
       text-align: center;
       padding: 2rem;
-      background: #1a1a1a;
+      background: #f0f0f0;
       margin-top: 3rem;
     }
     .back-to-top {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #ff9800;
-      color: #121212;
+      background: #000000;
+      color: #ffffff;
       padding: 0.5rem 1rem;
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
     }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 500px;
+    .instagram-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #000000;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    .instagram-link i {
+      font-size: 1.5rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My Art</h1>
+    <h1>Yugeart</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#gallery">Gallery</a>
@@ -122,7 +131,7 @@
   </header>
 
   <section class="hero" data-aos="fade-up">
-    <h2>Explore My World of Pencil & Color Art</h2>
+    <h2>Explore My Art World</h2>
     <p>Art that speaks from the soul, captured in every line and shade.</p>
     <a class="btn" href="#contact">Commission Me</a>
   </section>
@@ -150,12 +159,13 @@
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button class="btn" type="submit">Send</button>
     </form>
-    <p>Follow me on Instagram:</p>
-    <iframe src="https://www.instagram.com/yourusername/embed" allowtransparency="true"></iframe>
+    <a class="instagram-link" href="https://www.instagram.com/__yugeart__/" target="_blank">
+      <i class="fab fa-instagram"></i> @__yugeart__
+    </a>
   </section>
 
   <footer>
-    <p>&copy; 2025 My Art. All rights reserved.</p>
+    <p>&copy; 2025 Yugeart. All rights reserved.</p>
   </footer>
 
   <a href="#" class="back-to-top">↑</a>
